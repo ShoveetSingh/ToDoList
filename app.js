@@ -126,6 +126,6 @@ app.get("/:customListName",function(req,res){
 //console.log(req.params.customListName);
 });
 
-app.listen(7000,function(){
+app.listen(7000||process.env.PORT,function(){
     console.log("Server is runing on port 7000.");
 });  
